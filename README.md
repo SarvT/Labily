@@ -1,4 +1,4 @@
-```
+
 # Labily
 
 Welcome to Labily, your one-stop solution for all pet care needs. Our website offers a range of services to ensure your pet is happy, healthy, and well taken care of. Whether it's playtime in a free zone, expert grooming, professional photoshoots, or pet training, we've got it all covered.
@@ -21,7 +21,7 @@ Welcome to Labily, your one-stop solution for all pet care needs. Our website of
 - [License](#license)
 
 ## Installation
-
+```
 1. **Clone the repository**
     ```bash
     git clone https://github.com/yourusername/pet-paradise.git
