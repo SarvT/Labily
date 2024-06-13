@@ -21,7 +21,7 @@ Welcome to Labily, your one-stop solution for all pet care needs. Our website of
 - [License](#license)
 
 ## Installation
-```
+
 1. **Clone the repository**
     ```bash
     git clone https://github.com/yourusername/pet-paradise.git
@@ -103,6 +103,6 @@ Contributions are welcome! If you would like to contribute to this project, plea
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
+
 
 Feel free to modify the README file to suit your specific project details, such as the repository link, additional features, or contribution guidelines.
