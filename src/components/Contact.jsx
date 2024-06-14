@@ -3,6 +3,8 @@ import React from "react";
 function Contact(){
     return(
         <>
+        <div className="cnt-main">
+
                 <h4 className="cnt-head">Contact 24x7</h4>
                 <p className="cnt-subhead">We care for the pets,<br />
                     Contact us for any help.
@@ -20,6 +22,7 @@ function Contact(){
                     <address>31, Unknown Road, Near to the west, India</address>
                 </div>
             </div>
+        </div>
         </>
     );
 }

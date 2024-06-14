@@ -3,6 +3,8 @@ import React from "react";
 function Services(){
     return(
         <>
+        <div className="ser-main">
+
             <h4 className="ser-head">We Offer</h4>
             <div className="services">
                 {/* <p className="cnt-subhead">We care for the pets,<br />
@@ -48,6 +50,7 @@ Certified professionals providing top-notch pet care and guidance.</div>
                     <button type="submit">Submit</button>
                 </div>
             </div>
+                </div>
         </>
     );
 }
