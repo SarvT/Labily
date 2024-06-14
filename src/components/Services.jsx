@@ -43,11 +43,16 @@ Certified professionals providing top-notch pet care and guidance.</div>
                 </div>
 
                 </div>
+                <div className="ser-second">
+                    <h3>Pet care with love</h3>
+                    <p>We offer high-class care services and activities for your pets. No matter what accommodation type you choose, your pet will alwaуз receive premium meals, daily exercise and play time and constant care from our professional trained team of pet welfare staff</p>
                 <div className="ser-cnt">
+
                     <input placeholder="Samuel Kinder" type="text" name="name" />
                     <input placeholder="user@mail.com" type="email" name="email" />
                     <textarea placeholder="Any message?" type="text" name="desc" />
                     <button type="submit">Submit</button>
+                </div>
                 </div>
             </div>
                 </div>

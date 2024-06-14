@@ -8,9 +8,11 @@ function Navbar(){
             <nav>
                 <div className="logo">LaBily</div>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
+                    <li>Services</li>
                     <li>Contact</li>
+                    <li>About</li>
+                    <li>Donate</li>
+                    <li>Volunteer</li>
                 </ul>
             </nav>
         </div>

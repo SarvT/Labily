@@ -52,6 +52,7 @@ nav ul li {
 .logo {
     font-family: "Amatic SC", serif;
     font-size: 46px;
+    font-weight: 600;
 }
 
 
@@ -90,21 +91,31 @@ nav ul li {
 
 
 .main-heading {
-    font-size: 76px;
+    font-size: 126px;
     color: orange;
     float: right;
-    transform: translateX(600px) translateY(200px);
+    transform: translateX(600px) translateY(80px);
     min-width: 40vw;
     /* display: flex; */
     /* transform: ; */
+    /* text-align: start; */
+}
+
+.head-subline{
+    font-size: large;
+    color: black;
+    transform: translateY(-40px);
+    margin: 20px;
+    font-family:  "Poppins";
+    text-transform: capitalize;
 }
 
 .main-heading p:nth-child(1){
     margin-top: 3rem;
 }
 
-.main-heading p:nth-child(1){
-    margin-bottom: -2rem;
+.main-heading p:nth-child(1), .main-heading p:nth-child(2){
+    margin-bottom: -2.5rem;
 }
 
 .btn-heading {
@@ -125,7 +136,7 @@ nav ul li {
     background-color: transparent;
     color: orange;
     border: orange 1px solid;
-    transform: translateX(-620px) translateY(400px);
+    transform: translateX(-620px) translateY(550px);
     font-family: "Comfortaa";
     font-weight: 700;
     cursor: pointer;
@@ -139,6 +150,26 @@ footer {
     /* min-height: 100vh; */
 
 }
+
+.media{
+    text-align: center;
+    margin-left : 12px;
+}
+
+.media-sub{
+    
+    display: flex;
+    /* padding: 12px; */
+}
+.media-sub li{
+    margin: 10px 12px;
+}
+
+
+/* .footer li:nth-child(2){
+    margin-top: 1rem;
+} */
+
 
 .lists {
     display: flex;
@@ -178,8 +209,8 @@ footer {
 }
 
 .cnt-info button {
-    width: 8rem;
-    height: 2rem;
+    width: 18rem;
+    height: 3rem;
     margin: 1rem;
     border-radius: 25px;
     background: orange;
@@ -190,9 +221,14 @@ footer {
 input {
     border: 0px solid;
     margin: 5px 2rem;
-    width: 34%;
-    height: 4vh;
-    border-bottom: 1px solid orange;
+    width: 20vw;
+    height: 1rem;
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: .8rem;
+    /* width: 34%;   */
+    /* height: 4vh; */
+    /* border-bottom: 1px solid orange; */
 }
 
 textarea {
@@ -203,6 +239,13 @@ textarea {
     width: 82%;
     display: block;
     margin: 0 auto;
+
+    width: 46vw;
+    /* height: 1rem; */
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: .8rem;
+    resize: none;
 }
 
 .ser-main{
@@ -210,6 +253,16 @@ textarea {
     min-height: 100vh;
 }
 
+.ser-second h3{
+    font-size: 34px;
+    text-align: start;
+}
+
+.ser-second p{
+    margin: 2rem 0;
+    text-align: start;
+    width: 30vw;
+}
 .services {
     display: flex;
     justify-content: space-evenly;

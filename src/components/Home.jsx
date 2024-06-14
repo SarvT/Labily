@@ -19,13 +19,15 @@ function Home() {
         <div className="heading-elements">
           <div className="heading">
             <div className="main-heading">
-              <p>Give them,</p>
+              <p>Give them</p>
+              <p>The care</p>
               <p>they deserve.</p>
+              <p className="head-subline">We are just a click away.</p>
             </div>
             <img className="head-img" src={img1} alt="Image" />
             <div className="btn-heading ">
-              <button className="ctn-btn">Book</button>
-              <button className="work-btn">Know more...</button>
+              <button className="ctn-btn" style={{backgroundColor: 'orange', color:'white'}}>Our Services</button>
+              <button className="work-btn">Contact Us</button>
             </div>
           </div>
         </div>
