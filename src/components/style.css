@@ -343,6 +343,7 @@ textarea {
 .menu{
     display: inline-block;
     cursor: pointer;
+    margin-top: .5rem;
 }
 
 .bar1, .bar2, .bar3 {
@@ -413,6 +414,11 @@ textarea {
 
     nav ul{
         display: none;
+    }
+
+    nav{
+        padding: 1rem;
+        /* margin: auto 1rem; */
     }
 
     .bg{
