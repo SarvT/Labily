@@ -13,6 +13,11 @@
 
 }
 
+Link, a{
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
 .home-page {
     overflow: hidden;
     /* filter: invert(); */

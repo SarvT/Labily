@@ -35,10 +35,10 @@ function Footer() {
               </li>
               <div className="media-sub">
                 <li>
-                  <i className="fa-brands fa-instagram" ></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </li>
                 <li>
-                  <i className="fa-brands fa-twitter" ></i>
+                  <i className="fa-brands fa-twitter"></i>
                 </li>
                 <li>
                   <i className="fa-solid fa-map-pin"></i>

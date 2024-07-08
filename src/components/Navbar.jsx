@@ -1,10 +1,7 @@
 import React, {useState} from "react";
 import "./style.css";
 import { useMediaQuery } from "react-responsive";
-
-// function menuAnimation(ctx){
-//   ctx.classList.toggle("change")
-// }e
+import {Link} from "react-router-dom";
 
 function Navbar() {
   const isMobile = useMediaQuery({ query: `(max-width:760px)` });
@@ -13,13 +10,38 @@ function Navbar() {
     <>
       <div>
         <nav>
-          <div className="logo">LaBily</div>
+          <div className="logo">
+            <Link to="/home">
+            LaBily
+            </Link>
+            </div>
           <ul>
-            <li>Donate</li>
-            <li>Volunteer</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>About</li>
+            <li>
+              <Link to="/donate">
+              Donate
+              </Link>
+              </li>
+            <li><Link to="/volunteer">
+              Volunteer
+              </Link>
+              </li>
+            <li>
+            <Link to="/services">
+              Services
+              </Link>
+
+            </li>
+            <li>
+            <Link to="/contact">
+              Contact
+              </Link>
+
+            </li>
+            <li>
+            <Link to="/about">
+              About
+              </Link>
+              </li>
           </ul>
           { isMobile ?
             <div className={change ? `menu change` : `menu`} onClick={()=>{setChange(!change)}}>
