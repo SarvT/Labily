@@ -9,7 +9,7 @@ export default function ErrorPage() {
       <h3 className='text-3xl font-black'>Error!</h3>
       <h2  className='text-2xl'>Page not found</h2>
       <p>You are seeing this page because the address you entered is not correct, please revisit us.</p>
-      <button onClick={()=>navigate('/home')} className='mx-auto m-2 rounded-lg p-2 px-4 font-thin w-fit shadow-inner hover:shadow-xl bg-green-700 duration-250' >Click here</button>
+      <button onClick={()=>navigate('/')} className='mx-auto m-2 rounded-lg p-2 px-4 font-thin w-fit shadow-inner hover:shadow-xl bg-green-700 duration-250' >Click here</button>
     </div>
   )
 }

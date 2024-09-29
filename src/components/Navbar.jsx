@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className={`logo ${hoverAnim}`}>
-        <Link  to="/home">LaBily</Link>
+        <Link  to="/">LaBily</Link>
       </div>
       <ul className={isMobile && !change ? "nav-links hidden" : "nav-links"}>
         {navData.map((red, idx)=>(
