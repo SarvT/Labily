@@ -79,7 +79,7 @@ nav ul li {
     /* right: 0    ; */
     /* float: right; */
     /* margin-left: 10rem; */
-    transform: translateX(720px);
+    /* transform: translateX(-720px); */
 }
 
 .heading-elements {
@@ -90,6 +90,7 @@ nav ul li {
 .heading {
     display: flex;
     /* justify-content: end; */
+    
     font-family: "Bebas Neue";
     font-weight: 400;
 }
@@ -98,34 +99,39 @@ nav ul li {
 .main-heading {
     font-size: 126px;
     color: orange;
-    float: right;
-    transform: translateX(600px) translateY(80px);
+    margin-left: 22rem;
+    /* float: right; */
+    /* transform: translateX(600px) translateY(80px); */
     min-width: 40vw;
     /* display: flex; */
     /* transform: ; */
     /* text-align: start; */
 }
 
+.main-heading p{
+    margin-bottom: -4rem;
+
+}
+
 .head-subline{
     font-size: large;
     color: black;
-    transform: translateY(-40px);
+    /* transform: translateY(-50px); */
     margin: 20px;
     font-family:  "Poppins";
     text-transform: capitalize;
 }
 
 .main-heading p:nth-child(1){
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .main-heading p:nth-child(1), .main-heading p:nth-child(2){
-    margin-bottom: -2.5rem;
+    /* margin-bottom: -2.5rem; */
 }
 
 .btn-heading {
     display: flex;
-
 }
 
 .btn-heading button {
@@ -135,16 +141,16 @@ nav ul li {
     border-radius: 25px;
     font-size: 18px;
     font-weight: 700;
-    /* justify-content: center; */
-    /* float: left; */
+    /* justify-content: start; */
     /* padding: 1rem; */
     background-color: transparent;
     color: orange;
     border: orange 1px solid;
-    transform: translateX(-620px) translateY(550px);
+    transform: translateX(-1350px) translateY(400px);
     font-family: "Comfortaa";
     font-weight: 700;
     cursor: pointer;
+    /* float: left; */
 
 }
 

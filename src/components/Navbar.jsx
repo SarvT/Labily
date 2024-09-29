@@ -1,60 +1,42 @@
-import React, {useState} from "react";
-import "./style.css";
+import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./style.css";
 
 function Navbar() {
   const isMobile = useMediaQuery({ query: `(max-width:760px)` });
   const [change, setChange] = useState(false);
+  const navData = [
+    ["donate", "Donate"],
+    ["volunteer", "Volunteer"],
+    ["services", "Services"],
+    ["contact", "Contact"],
+    ["about", "About"],
+  ];
+  const hoverAnim = "hover:-translate-y-1 hover:drop-shadow-xl duration-300";
   return (
-    <>
-      <div>
-        <nav>
-          <div className="logo">
-            <Link to="/home">
-            LaBily
-            </Link>
-            </div>
-          <ul>
-            <li>
-              <Link to="/donate">
-              Donate
-              </Link>
-              </li>
-            <li><Link to="/volunteer">
-              Volunteer
-              </Link>
-              </li>
-            <li>
-            <Link to="/services">
-              Services
-              </Link>
-
-            </li>
-            <li>
-            <Link to="/contact">
-              Contact
-              </Link>
-
-            </li>
-            <li>
-            <Link to="/about">
-              About
-              </Link>
-              </li>
-          </ul>
-          { isMobile ?
-            <div className={change ? `menu change` : `menu`} onClick={()=>{setChange(!change)}}>
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-              <div className="bar3"></div>
-            </div>
-            :
-            <></>
-          }
-        </nav>
+    <nav className="navbar">
+      <div className={`logo ${hoverAnim}`}>
+        <Link  to="/home">LaBily</Link>
       </div>
-    </>
+      <ul className={isMobile && !change ? "nav-links hidden" : "nav-links"}>
+        {navData.map((red, idx)=>(
+          <li className={`font-semibold opacity-80 hover:opacity-100 ${hoverAnim}`} key={idx}>
+          <Link to={`/${red[0]}`}>{red[1]}</Link>
+        </li>
+        ))}
+      </ul>
+      {isMobile ? (
+        <div
+          className={`menu ${change ? "change" : ""}`}
+          onClick={() => setChange(!change)}
+        >
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
+      ) : null}
+    </nav>
   );
 }
 
