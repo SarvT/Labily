@@ -13,15 +13,14 @@
 
 }
 
-Link, a{
+Link,
+a {
     color: #1c1c1c;
     text-decoration: none;
 }
 
 .home-page {
     overflow: hidden;
-    /* filter: invert(); */
-    /* background-color: white; */
 }
 
 .bg {
@@ -29,10 +28,8 @@ Link, a{
     height: 40vw;
     border-top-left-radius: 80vw;
     border-bottom-left-radius: 80vw;
-    /* border-bottom-left-radius: 80vw; */
-    /* border-bottom-right-radius: 80vw; */
     float: right;
-    background-color: orange    ;
+    background-color: orange;
 }
 
 nav {
@@ -65,21 +62,13 @@ nav ul li {
 
 .home-page {
     min-height: 100vh;
-    /* background: url("./pet-pr1.jpg") no-repeat center ;
-    background-size: cover; */
     background: white;
     text-transform: uppercase;
     overflow-y: hidden;
-
-    /* filter: blur(8px); */
 }
 
 .head-img {
     width: 720px;
-    /* right: 0    ; */
-    /* float: right; */
-    /* margin-left: 10rem; */
-    /* transform: translateX(-720px); */
 }
 
 .heading-elements {
@@ -101,25 +90,26 @@ nav ul li {
     min-width: 40vw;
 }
 
-.main-heading p{
+.main-heading p {
     margin-bottom: -4rem;
 
 }
 
-.head-subline{
+.head-subline {
     font-size: large;
     color: black;
     /* transform: translateY(-50px); */
     margin: 20px;
-    font-family:  "Poppins";
+    font-family: "Poppins";
     text-transform: capitalize;
 }
 
-.main-heading p:nth-child(1){
+.main-heading p:nth-child(1) {
     /* margin-top: 3rem; */
 }
 
-.main-heading p:nth-child(1), .main-heading p:nth-child(2){
+.main-heading p:nth-child(1),
+.main-heading p:nth-child(2) {
     /* margin-bottom: -2.5rem; */
 }
 
@@ -134,8 +124,6 @@ nav ul li {
     border-radius: 25px;
     font-size: 18px;
     font-weight: 700;
-    /* justify-content: start; */
-    /* padding: 1rem; */
     background-color: transparent;
     color: orange;
     border: orange 1px solid;
@@ -143,7 +131,6 @@ nav ul li {
     font-family: "Comfortaa";
     font-weight: 700;
     cursor: pointer;
-    /* float: left; */
 
 }
 
@@ -151,28 +138,24 @@ footer {
     background-color: orange;
     padding: 2rem;
     color: white;
-    /* min-height: 100vh; */
 
 }
 
-.media{
+.media {
     text-align: center;
-    margin-left : 12px;
+    margin-left: 12px;
 }
 
-.media-sub{
-    
+.media-sub {
+
     display: flex;
-    /* padding: 12px; */
 }
-.media-sub li{
+
+.media-sub li {
     margin: 10px 12px;
 }
 
 
-/* .footer li:nth-child(2){
-    margin-top: 1rem;
-} */
 
 
 .lists {
@@ -185,10 +168,7 @@ footer {
     list-style: none;
 }
 
-.cnt-main{
-
-    /* min-height: 100vh; */
-}
+.cnt-main {}
 
 .contact {
     display: flex;
@@ -208,7 +188,6 @@ footer {
 }
 
 .cnt-info {
-    /* float: inline-start; */
     margin: 4rem;
 }
 
@@ -230,13 +209,9 @@ input {
     border: 1px solid orange;
     border-radius: 25px;
     padding: .8rem;
-    /* width: 34%;   */
-    /* height: 4vh; */
-    /* border-bottom: 1px solid orange; */
 }
 
 textarea {
-    /* height: 4vh; */
     height: 20vh;
     border: 0px solid;
     border-bottom: 1px solid orange;
@@ -245,28 +220,28 @@ textarea {
     margin: 0 auto;
 
     width: 46vw;
-    /* height: 1rem; */
     border: 1px solid orange;
     border-radius: 25px;
     padding: .8rem;
     resize: none;
 }
 
-.ser-main{
+.ser-main {
 
     min-height: 100vh;
 }
 
-.ser-second h3{
+.ser-second h3 {
     font-size: 34px;
     text-align: start;
 }
 
-.ser-second p{
+.ser-second p {
     margin: 2rem 0;
     text-align: start;
     width: 30vw;
 }
+
 .services {
     display: flex;
     justify-content: space-evenly;
@@ -274,7 +249,6 @@ textarea {
 }
 
 .cnt-det {
-    /* float: inline-end; */
     margin: 4rem;
 }
 
@@ -344,114 +318,147 @@ textarea {
     color: orange;
 }
 
-.menu{
+.menu {
     display: inline-block;
     cursor: pointer;
     margin-top: .5rem;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
-  }
+}
 
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
+
 .change .bar2 {
     opacity: 0;
 }
+
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
+    * {
 
-    .ser-main, .services{
+        /* overflow: scroll; */
+    }
+
+    .ser-main,
+    .services {
         display: block;
     }
 
-    .ser-second
-
-    .ser-cnt input, .ser-cnt textarea, .ser-cnt button{
+    .ser-second .ser-cnt input,
+    .ser-cnt textarea,
+    .ser-cnt button {
         width: 70vw;
     }
 
 
 
-    .cnt-main{
+    .cnt-main {
         display: block;
         margin-top: 20rem;
     }
-    
-    .cnt-det{
+
+    .cnt-det {
         margin: 0;
     }
-    
-    .contact{
+
+    .contact {
         display: block;
 
     }
 
-    .cnt-info input{
+    .cnt-info input {
         width: 70vw;
         margin: .2rem auto;
     }
 
-    .cnt-info textarea{
+    .cnt-info textarea {
         width: 70vw;
         margin: .2rem auto;
     }
 
-    .cnt-info button{
+    .cnt-info button {
         width: 35vw;
         margin: 1rem auto;
     }
 
-    .cnt-det{
+    .cnt-det {
         margin: 5rem auto;
     }
 
-    nav ul{
-        display: none;
-    }
-
-    nav{
-        padding: 1rem;
-        /* margin: auto 1rem; */
-    }
-
-    .bg{
-        /* width: 55vw; */
-        height: 90vw;
-        margin: auto;
-        border-top-left-radius: 80vw;
-        border-bottom-left-radius: 80vw;
-        /* float: right; */
+    nav ul {
+        /* display: none; */
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: orange    ;
+    }
+    
+    nav ul li{
+        position: relative;
+        text-align: center;
+        margin: 0.5rem;
+        font-size: small;
+        
+    }
+    
+    nav {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .bg {
+        height: 80vw;
+        margin: auto;
+        border-top-right-radius: 80vw;
+        border-bottom-right-radius: 80vw;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 80vw;
+        background-color: orange;
+    }
+
+    .heading {
+        display: block;
+        display: contents;
+    }
+
+    .home-page{
+        display: flex;
+        justify-content: space-between;
     }
 
     .main-heading {
-        font-size: 86px;
+        font-size: 76px;
         color: orange;
-        float: right;
         filter: drop-shadow(6px 7px 25px #ffffff80);
-        min-width: 90vw;
-        margin: auto 1rem;
-        transform: translateX(680px);
-        text-align: start;
+        /* text-align: center; */
     }
-
-    .main-heading button{
+    
+    .head-img {
+        /* margin: auto; */
+        width: 28rem;
+        /* display: none; */
+        /* position: relative; */
+    }
+    
+    .main-heading button {
         margin: 0 2rem;
-        transform: translate() none;
+        
+        /* transform: translate() none; */
     }
     
     .btn-heading button {
@@ -468,19 +475,72 @@ textarea {
         font-family: "Comfortaa";
         font-weight: 700;
         cursor: pointer;
+    }
     
+    
+    
+    
+    
+    .heading-elements {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+        justify-content: center; /* Center elements vertically */
+        text-align: center; /* Center text */
+        margin: auto; /* Center within the container */
+        width: 100%; /* Full width for better spacing */
+    }
+    
+    .head-img {
+        width: 80vw; /* Adjust width for small screens */
+        margin-bottom: 1rem; /* Space below the image */
+    }
+    
+    .main-heading {
+        font-size: 28px; /* Adjust font size for readability on small screens */
+        color: orange;
+        filter: drop-shadow(6px 7px 25px #ffffff80);
+        text-align: center;
+        /* margin: 0; */
+    }
+    
+    .heading-elements {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        margin-left: -22rem;
+    }
+    
+    .head-img {
+        width: 80vw;
+        margin-bottom: 1rem;
     }
 
+      .head-subline{
+        display: none;
+      }
+    
+      .main-heading {
+        font-size: 28px;
+        margin: 0;
+        color: wheat;
+      }
+        
 
-    .ser-second h3, .ser-second p{
+
+
+
+
+
+    .ser-second h3,
+    .ser-second p {
         width: 80vw;
         text-align: center;
         margin: 2rem auto;
     }
 
-    
-
-
-
-    
 }
+
